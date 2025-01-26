@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Finance Manager</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#transactions">Transactions</a></li>
+            <li><a href="#budget">Budget</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div>
+                <img src="Blue_bar_graph.png" alt="overview">
+            </div>
+            <p>Overview of your financial status.</p>
+        </section>
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <p>Manage your income and expenses.</p>
+            <img src="Transcation History 1.jpg" alt="transaction">
+        </section>
+        <section id="budget">
+            <h2>Budget</h2>
+            <p>Set and track your budget goals.</p>
+            <div class="goal-container">
+                <h2>Set Your Financial Goals</h2>
+                <div class="goal-section">
+                  <button id="addGoalBtn" class="add-goal-btn">Add Goal</button>
+                  <div id="goalList" class="goal-list"></div>
+                </div>
+              </div>
+            
+              <div class="goal-form" id="goalForm">
+                <label for="goalInput">Goal Name:</label>
+                <input type="text" id="goalInput" placeholder="Enter your goal">
+                <button id="saveGoalBtn">Save Goal</button>
+                <button id="cancelGoalBtn">Cancel</button>
+              </div>
+            
+              <script src="script.js"></script>
+        </section>
+        <section id="reports">
+            <h2>Reports</h2>
+            <p>Analyze your financial performance.</p>
+            <img src="table_4_en.png" alt="report">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Finance Manager</p>
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>
